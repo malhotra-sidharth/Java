@@ -40,7 +40,7 @@ public class ChatWindow extends javax.swing.JFrame {
         try{
             String driver = "com.mysql.jdbc.Driver";
             Class.forName(driver);
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb", "root", "");
+            conn = DriverManager.getConnection("", "", ""); // ENTER DATABASE CONNECTION DETAILS
             System.out.println("Connected!!");
         }catch(ClassNotFoundException error)
         {
